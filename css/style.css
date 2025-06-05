@@ -71,14 +71,27 @@ nav {
         li {
           a {
             display: block;
+            position: relative;
             text-decoration: none;
             font-weight: 500;
             font-size: 16px;
             color: var(--black);
             transition: opacity var(--duration);
-
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background: var(--gold);
+              transition: width var(--duration);
+            }
             &:hover {
               opacity: 0.7;
+            }
+            &:hover::after {
+              width: 100%;
             }
           }
         }
