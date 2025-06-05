@@ -1,0 +1,113 @@
+@import "normalize.css";
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #646464;
+  --darkWhite: #eeeeee;
+  --lightGrey: #f8f8f8;
+  --mediumGrey: #d5d5d5;
+  --green: #37806b;
+  --brown: #caa892;
+  --gold: #b0855b;
+  --duration: 0.4s;
+  --border: 15px 0 15px 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+p {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 19px;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  transition: opacity var(--duration);
+  border-radius: var(--border);
+  &:hover {
+    opacity: 0.7;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+nav {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 107px;
+    .nav__menu {
+      .nav__mobile-btn {
+        display: none;
+        background: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+      }
+      ul {
+        display: flex;
+        gap: 64px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            display: block;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--black);
+            transition: opacity var(--duration);
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1024px) {
+          gap: 20px;
+        }
+      }
+    }
+    .nav__sign__up {
+      .btn {
+        background: var(--brown);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .nav__menu {
+        .nav__mobile-btn {
+          display: block;
+          img {
+            width: inherit;
+            
+          }
+        }
+        ul {
+          display: none;
+        }
+      }
+      .nav__sign__up {
+        display: none;
+      }
+    }
+  }
+}
