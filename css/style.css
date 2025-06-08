@@ -473,6 +473,29 @@ main {
     .about {
       gap: 132px;
     }
+    .working {
+      gap: 155px;
+      padding-bottom: 177px;
+      .content__text {
+        h3 {
+          font-size: 288px;
+          font-weight: 700;
+          margin: 0;
+          width: 600px;
+          height: 300px;
+          background: url("https://zastavok.net/main/textures/1477075810.jpg") no-repeat center;
+          background-size: cover;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -webkit-font-smoothing: antialiased;
+        }
+        h2 {
+          margin-top: 17px;
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
 
   .dots {
