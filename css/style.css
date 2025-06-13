@@ -708,6 +708,7 @@ main {
     max-width: 100%;
     background: var(--lightGrey);
     padding: 87px 20px;
+    position: relative;
     .container {
       h2,
       p {
@@ -757,6 +758,11 @@ main {
     }
     @media screen and (max-width: 768px) {
       padding: 40px 5px;
+    }
+    .dots{
+      position: absolute;
+      right: 0;
+      top: 880px;
     }
   }
   .dots {
