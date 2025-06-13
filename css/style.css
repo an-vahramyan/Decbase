@@ -704,6 +704,61 @@ main {
       bottom: -180px;
     }
   }
+  .blog {
+    max-width: 100%;
+    background: var(--lightGrey);
+    padding: 87px 20px;
+    .container {
+      h2,
+      p {
+        text-align: center;
+      }
+      h2 {
+        color: var(--black);
+        font-size: 48px;
+        margin: 0;
+        font-weight: 500;
+      }
+      .blog__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 136px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        h3 {
+          color: var(--lightBlack);
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 28px;
+        }
+        p {
+          text-align: left;
+          color: var(--gray);
+          font-weight: 400;
+        }
+        .btn {
+          background-color: var(--green);
+        }
+        @media screen and (max-width: 1200px) {
+          gap: 100px;
+        }
+        @media screen and (max-width: 1024px) {
+          flex-wrap: wrap;
+          gap: 50px;
+        }
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 60px 10px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 40px 5px;
+    }
+  }
   .dots {
     margin-top: 77px;
     margin-bottom: 100px;
