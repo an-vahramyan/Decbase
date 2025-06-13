@@ -537,11 +537,10 @@ main {
         .swiper__item {
           max-width: 571px;
           height: 226px;
-          gap: 84;
           box-sizing: border-box;
           padding: 41px 35px 60px 102px;
           position: relative;
-          color:var(--lightBlack);
+          color: var(--lightBlack);
           img {
             width: 130px;
             height: 164px;
@@ -559,7 +558,22 @@ main {
           }
           &:nth-child(2) {
             background: var(--white);
-            color:var(--lightBlack);
+            color: var(--lightBlack);
+          }
+        }
+        @media screen and (max-width: 1240px) {
+          flex-direction: column;
+        }
+        @media screen and (max-width: 768px) {
+          .swiper__item {
+            height: 200px;
+            img {
+              width: 100px;
+              height: 134px;
+              border-radius: 20px 0 20px 0;
+              position: absolute;
+              left: -35px;
+            }
           }
         }
       }
